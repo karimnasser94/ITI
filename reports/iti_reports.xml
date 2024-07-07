@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <report
+                id="iti_student_report"
+                string="Students Report"
+                name="iti.iti_student_template"
+                model="iti.student.bns"
+                report_type="qweb-pdf"
+        />
+    </data>
+</odoo>

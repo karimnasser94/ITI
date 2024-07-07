@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <record id="iti_groups_category" model="ir.module.category">
+            <field name="name">ITI</field>
+        </record>
+
+        <record id="iti_normal_group" model="res.groups">
+            <field name="name">Iti Normal User</field>
+            <field name="category_id" ref="iti_groups_category"/>
+
+        </record>
+        <record id="iti_manager_group" model="res.groups">
+            <field name="name">Iti Manager User</field>
+            <field name="category_id" ref="iti_groups_category"/>
+            <field name="implied_ids" eval="[(4,ref('iti_normal_group'))]"/>
+
+        </record>
+    </data>
+</odoo>
